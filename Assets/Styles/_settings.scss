@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "inter";
+    src: url(../Fonts/Inter-ExtraBold.ttf);
+}
+@font-face {
+    font-family: "Merriweather";
+    src: url(../Fonts/Merriweather-Light.ttf);
+}
+
+$font1: "inter", sans-serif;
+$font2: "Merriweather", sans-serif;
+$color1:rgb(238, 238, 238);
+$color2: rgba(204, 204, 204, 0.699);
+$color3: rgb(23, 23, 23);
+
+
+body{
+    background: url(../images/bg.jpg) fixed center/cover;
+}
