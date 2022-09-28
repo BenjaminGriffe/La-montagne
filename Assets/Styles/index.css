@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "inter";
+  src: url(../Fonts/Inter-ExtraBold.ttf);
+}
+@font-face {
+  font-family: "Merriweather";
+  src: url(../Fonts/Merriweather-Light.ttf);
+}
+body {
+  background: url(../images/bg.jpg) fixed center/cover;
+}/*# sourceMappingURL=index.css.map */
