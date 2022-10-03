@@ -6,6 +6,189 @@
   font-family: "Merriweather";
   src: url(../Fonts/Merriweather-Light.ttf);
 }
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style-type: none;
+  margin-block: 0;
+  outline: none;
+}
+
 body {
   background: url(../images/bg.jpg) fixed center/cover;
+  margin: 100px 100px 50px;
+}
+
+h1,
+H2,
+h3 {
+  text-transform: uppercase;
+  font-family: "inter", sans-serif;
+}
+
+.button {
+  background: transparent;
+  border: 2px solid rgb(23, 23, 23);
+  color: rgb(23, 23, 23);
+  text-transform: uppercase;
+  font-family: "inter", sans-serif;
+  font-size: 1rem;
+  -webkit-transition: 0.4s ease;
+  -o-transition: 0.4s ease;
+  transition: 0.4s ease;
+  cursor: pointer;
+  padding: 13px 30px;
+  letter-spacing: 2px;
+}
+.button:hover {
+  border: 2px solid rgb(238, 238, 238);
+  color: rgb(238, 238, 238);
+  background: rgb(23, 23, 23);
+}
+
+a {
+  text-decoration: none;
+}
+
+.section-1,
+.section-2,
+footer {
+  background: rgb(238, 238, 238);
+  width: 90%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
+.date {
+  font-size: 1.4rem;
+  font-family: "Merriweather", sans-serif;
+}
+
+.text {
+  font-size: 1.2rem;
+  font-family: "Merriweather", sans-serif;
+  line-height: 50px;
+}
+
+header {
+  min-height: 1000px;
+  color: rgb(238, 238, 238);
+  position: relative;
+}
+header .Htop {
+  text-align: center;
+}
+header .Htop H1 {
+  letter-spacing: 4px;
+  font-size: 6rem;
+  margin-top: 300px;
+  padding: 100px 550px 0px;
+}
+header .Htop p {
+  font-size: 2rem;
+  margin: 0;
+  padding: 50px 0;
+  margin-bottom: 50px;
+}
+header .Htop a {
+  font-size: 2rem;
+  border: 1px solid rgb(238, 238, 238);
+  border-radius: 50px;
+  padding: 14px 19px;
+  -webkit-transition: 0.4s ease;
+  -o-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+header .Htop a:hover {
+  border: 1px solid rgba(204, 204, 204, 0.699);
+  color: rgba(204, 204, 204, 0.699);
+}
+header a {
+  color: rgb(238, 238, 238);
+}
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  width: 90%;
+  margin: 0 auto;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 0;
+  background: rgba(204, 204, 204, 0.308);
+  font-family: "inter", sans-serif;
+}
+header nav .page li {
+  padding: 30px 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+header nav .logo li {
+  padding: 30px 40px;
+  font-size: 1.4rem;
+}
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.section-1 .top {
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+.section-1 .top .date {
+  padding: 75px 0;
+  position: relative;
+}
+.section-1 .top .date:before {
+  position: absolute;
+  content: "";
+  width: 30%;
+  height: 2px;
+  background: rgba(204, 204, 204, 0.699);
+  top: 89px;
+  left: 10%;
+}
+.section-1 .top .date:after {
+  position: absolute;
+  content: "";
+  width: 30%;
+  height: 2px;
+  background: rgba(204, 204, 204, 0.699);
+  top: 89px;
+  right: 10%;
+}
+.section-1 .top h2 {
+  font-size: 5rem;
+  padding: 0 400px 50px;
+  letter-spacing: 6px;
+}
+.section-1 .top .text {
+  padding: 0 420px 75px;
+}
+.section-1 .pic-01 {
+  background: url(../images/pic01.jpg) center/cover;
+  width: 1450px;
+  height: 1000px;
+  margin: 0 auto;
+}
+.section-1 .button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 75px;
 }/*# sourceMappingURL=index.css.map */
