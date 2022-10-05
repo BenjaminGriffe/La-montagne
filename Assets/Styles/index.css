@@ -81,24 +81,25 @@ header {
 }
 header .Htop {
   text-align: center;
+  height: 800px;
 }
 header .Htop H1 {
   letter-spacing: 4px;
   font-size: 6rem;
   margin-top: 300px;
-  padding: 100px 550px 0px;
+  padding: 100px 720px 0px;
 }
 header .Htop p {
   font-size: 2rem;
   margin: 0;
   padding: 50px 0;
-  margin-bottom: 50px;
+  margin-bottom: 150px;
 }
 header .Htop a {
   font-size: 2rem;
-  border: 1px solid rgb(238, 238, 238);
+  border: 2px solid rgb(238, 238, 238);
   border-radius: 50px;
-  padding: 14px 19px;
+  padding: 16px 22px;
   -webkit-transition: 0.4s ease;
   -o-transition: 0.4s ease;
   transition: 0.4s ease;
@@ -144,6 +145,18 @@ header nav ul {
   position: relative;
 }
 
+.section-1 {
+  height: 1820px;
+  position: relative;
+}
+.section-1:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: rgba(204, 204, 204, 0.699);
+  bottom: 0px;
+}
 .section-1 .top {
   text-align: center;
   -webkit-box-align: center;
@@ -183,7 +196,7 @@ header nav ul {
 }
 .section-1 .pic-01 {
   background: url(../images/pic01.jpg) center/cover;
-  width: 1450px;
+  width: 1750px;
   height: 1000px;
   margin: 0 auto;
 }
@@ -191,4 +204,77 @@ header nav ul {
   display: block;
   margin: 0 auto;
   margin-top: 75px;
+}
+
+.section-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  height: 1250px;
+}
+.section-2:after {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 100%;
+  background: rgba(204, 204, 204, 0.699);
+  left: 50%;
+}
+.section-2 h3 {
+  font-size: 1.6rem;
+  letter-spacing: 3px;
+  padding: 0 360px 50px;
+}
+.section-2 .date {
+  padding: 100px 0 50px;
+  font-size: 1.2rem;
+}
+.section-2 .text {
+  text-align: left;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.section-2 .left-part-s2 {
+  max-width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+.section-2 .left-part-s2 h3 {
+  padding: 0 380px 50px;
+}
+.section-2 .left-part-s2 .pic-02 {
+  height: 500px;
+  width: 80%;
+  background: url(../images/pic02.jpg) no-repeat center/cover;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 50px;
+}
+.section-2 .right-part-s2 {
+  max-width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+.section-2 .right-part-s2 .pic-03 {
+  height: 500px;
+  width: 80%;
+  background: url(../images/pic03.jpg) no-repeat center/cover;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 50px;
+}
+
+footer .bold {
+  font-family: "inter", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: rgb(82, 82, 82);
 }/*# sourceMappingURL=index.css.map */
