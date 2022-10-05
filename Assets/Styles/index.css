@@ -273,6 +273,7 @@ header nav ul {
 }
 
 footer {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -282,6 +283,14 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+footer:after {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 100%;
+  background: rgba(204, 204, 204, 0.699);
+  left: 50%;
 }
 footer .bold {
   font-family: "inter", sans-serif;
