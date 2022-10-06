@@ -94,6 +94,7 @@ header .Htop p {
   margin: 0;
   padding: 50px 0;
   margin-bottom: 150px;
+  font-style: italic;
 }
 header .Htop a {
   font-size: 2rem;
@@ -193,6 +194,7 @@ header nav ul {
 }
 .section-1 .top .text {
   padding: 0 420px 75px;
+  font-style: italic;
 }
 .section-1 .pic-01 {
   background: url(../images/pic01.jpg) center/cover;
@@ -297,4 +299,137 @@ footer .bold {
   text-transform: uppercase;
   letter-spacing: 1px;
   color: rgb(82, 82, 82);
+}
+footer .info {
+  width: 50%;
+}
+footer .info ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  width: 75%;
+}
+footer .info a {
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  width: 44px;
+  height: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  color: rgb(23, 23, 23);
+  margin: 0 10px;
+}
+footer .info a :hover {
+  color: rgba(99, 99, 99, 0.788);
+  border: 1px solid rgba(99, 99, 99, 0.788);
+  border-radius: 50px;
+  width: 44px;
+  height: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer .info .light {
+  font-family: "Merriweather", sans-serif;
+  Color: grey;
+  width: 75%;
+}
+footer .info div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 100px 60px;
+  position: relative;
+}
+footer .info div:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: rgba(204, 204, 204, 0.699);
+  bottom: 0px;
+  left: 0px;
+  padding: 0;
+}
+footer .info div:first-child {
+  padding-right: 458px;
+  padding-bottom: 90px;
+  height: 220px;
+}
+footer .info div:first-child .light {
+  width: 300px;
+  height: 40px;
+  text-align: left;
+}
+footer .contact {
+  width: 50%;
+  text-align: left;
+  padding: 80px 70px;
+  height: 904px;
+}
+footer .contact .form-grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 120px 120px 300px;
+  grid-template-areas: "input1 input1" "input2 input2" "textarea textarea";
+  margin: 30px auto 60px;
+}
+footer .contact input[type=text],
+footer .contact textarea {
+  width: 100%;
+  margin: 20px 0 50px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+footer .contact input[type=text]:focus,
+footer .contact textarea:focus {
+  border: 2px solid rgba(99, 99, 99, 0.788);
+}
+footer .contact textarea {
+  resize: none;
+  height: 250px;
+}
+footer .contact .textarea {
+  grid-area: textarea;
+}
+footer .contact .i1 {
+  grid-area: input1;
+}
+footer .contact .i2 {
+  grid-area: input2;
+}
+footer .contact input[type=text] {
+  height: 60px;
 }/*# sourceMappingURL=index.css.map */

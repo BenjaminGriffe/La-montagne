@@ -17,4 +17,114 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    .info {
+        width: 50%;
+        ul {
+            display: flex;
+            justify-content: left;
+            align-items: left;
+            width: 75%;
+        }
+        a {
+            border: 1px solid #ccc;
+            border-radius: 50px;
+            width: 44px;
+            height: 44px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.3s;
+            color: $color3;
+            margin: 0 10px;
+
+            :hover {
+                color: rgba(99, 99, 99, 0.788);
+                border: 1px solid rgba(99, 99, 99, 0.788);
+                border-radius: 50px;
+                width: 44px;
+                height: 44px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        .light {
+            font-family: $font2;
+            Color: grey;
+            width: 75%;
+        }
+        div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding:  100px 60px;
+            position: relative;
+
+            &:after {
+                position: absolute;
+                content: "";
+                width: 100%;
+                height: 2px;
+                background: $color2;
+                bottom: 0px;
+                left: 0px;
+                padding: 0;
+            }
+            &:first-child {
+                padding-right: 458px;
+                padding-bottom: 90px;
+                height: 220px;
+                .light {
+                    width: 300px;
+                    height: 40px;
+                    text-align: left;
+                }
+            }
+        }
+    }
+    .contact {
+        width: 50%;
+        text-align: left;
+        padding: 80px 70px;
+        height: 904px;
+        .form-grid {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 120px 120px 300px;
+            grid-template-areas: 
+            "input1 input1"
+            "input2 input2"
+            "textarea textarea";
+            margin: 30px auto 60px;
+        }
+        input[type="text"],
+        textarea {
+            width: 100%;
+            margin: 20px 0 50px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            transition: 0.2s;
+            &:focus {
+                border: 2px solid rgba(99, 99, 99, 0.788); 
+            }
+        }
+        textarea {
+            resize: none;
+            height: 250px;
+        }
+        .textarea {
+            grid-area: textarea;
+        }
+        .i1 {
+            grid-area: input1;
+        }
+        .i2 {
+            grid-area: input2;
+        }
+        input[type="text"] {
+            height: 60px;
+        }
+    }
+    
 }
